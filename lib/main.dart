@@ -12,6 +12,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'University of Embu',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      darkTheme: ThemeData(
+        primarySwatch: Colors.grey,
+      ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.blue,
@@ -73,6 +79,10 @@ class HomePage extends StatelessWidget {
               ListTile(
                 title: Text('LMS'),
                 leading: Icon(Icons.computer),
+              ),
+              ListTile(
+                title: Text('Logout'),
+                leading: Icon(Icons.logout),
               ),
             ],
           ),
