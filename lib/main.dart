@@ -36,12 +36,12 @@ class HomePage extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.blue,
                 ),
-                child: Text(
-                  'Student Portal',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
+                child: UserAccountsDrawerHeader(
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
                   ),
+                  accountName: Text('B141/27465/2023'),
+                  accountEmail: Text('27465@student.embuni.ac.ke'),
                 ),
               ),
               ListTile(
