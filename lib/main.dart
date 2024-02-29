@@ -13,6 +13,7 @@ class HomePage extends StatelessWidget {
       title: 'University of Embu',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        
       ),
       darkTheme: ThemeData(
         primarySwatch: Colors.grey,
