@@ -108,7 +108,20 @@ class HomePage extends StatelessWidget {
               ),
           ],
         ),
+        body: const Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Text(
+                'Welcome Alex Mwaniki Nyambura',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
+            ),
+          ]
         ),
+      ),
     );
   }
 }
