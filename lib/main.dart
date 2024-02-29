@@ -107,6 +107,26 @@ class HomePage extends StatelessWidget {
               ),
           ],
         ),
+        body: Container(
+          margin: EdgeInsets.symmetric(vertical: 20.0),
+          height: 550.0,
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            children: <Widget>[
+              Container(
+                height: 480.0,
+                width: 240.0,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/ranking.jpg'),
+                    fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
