@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Colors.blue,
                   ),
-                  accountName: Text('Alex Mwaniki Nyambura'),
+                  accountName: Text('Alex'),
                   accountEmail: Text('27465@student.embuni.ac.ke'),
                 ),
               ),
