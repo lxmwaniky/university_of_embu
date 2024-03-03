@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
           backgroundColor: Colors.white,
           width: 250.0,
           child: ListView(
-            children: const <Widget> [
+            children: <Widget> [
               DrawerHeader(
                 decoration: BoxDecoration(
                   color: Colors.blue,
@@ -47,6 +47,12 @@ class HomePage extends StatelessWidget {
               ListTile(
                 title: Text('Home'),
                 leading: Icon(Icons.home),
+                onTap : () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const HomePage()),
+                  );
+                },
               ),
               ListTile(
                 title: Text('Timetable'),
