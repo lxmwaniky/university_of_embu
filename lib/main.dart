@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:university_of_embu/loginpage.dart';
 
 void main()
 {
@@ -10,6 +11,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'University of Embu',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        useMaterial3: true,
+      ),
+      home: const LoginPage(),
+    );
   }
 }
