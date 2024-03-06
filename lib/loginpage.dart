@@ -5,6 +5,13 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.grey[200],
+      appBar: AppBar(
+        title: const Text('University of Embu'),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
+      ),
+    );
   }
 }
