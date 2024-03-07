@@ -49,15 +49,12 @@ class SplashScreen extends StatelessWidget {
     }
   }
 
-  class LoginPage extends StatelessWidget {
-    const LoginPage({super.key});
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
 
-    @override
-    Widget build(BuildContext context) {
-      return Scaffold(
-        appBar: AppBar(
-          title: const Text('University of Embu'),
-      ),
-    );
+  @override
+  Widget build(BuildContext context) {
+    // ignore: prefer_const_constructors
+    return Scaffold();
   }
 }
