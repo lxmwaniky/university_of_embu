@@ -41,7 +41,7 @@ class SplashScreen extends StatelessWidget {
               ),
             SizedBox(height: 20),
             CircularProgressIndicator(),
-            Text('Welcome...')
+            Text('Welcome...'),
             LoginPage(),
           ],
         ),
