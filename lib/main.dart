@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
 }
 
 class SplashScreen extends StatelessWidget {
-    const SplashScreen({Key? key}) : super(key: key);
+    const SplashScreen({super.key});
 
     @override
     Widget build(BuildContext context) {
@@ -32,9 +32,9 @@ class SplashScreen extends StatelessWidget {
             children: <Widget>[
               Image.asset('assets/images/logo.jpeg'),
               const SizedBox(height: 30),
-              Text(
+              const Text(
                 'University of Embu Students Portal', 
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Colors.blue)
@@ -42,7 +42,6 @@ class SplashScreen extends StatelessWidget {
               const SizedBox(height: 20),
               const CircularProgressIndicator(),
               const Text('Welcome...'),
-              const LoginPage(),
             ],
           ),
         ),
@@ -51,7 +50,7 @@ class SplashScreen extends StatelessWidget {
   }
 
   class LoginPage extends StatelessWidget {
-    const LoginPage({Key? key}) : super(key: key);
+    const LoginPage({super.key});
 
     @override
     Widget build(BuildContext context) {
