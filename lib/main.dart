@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:university_of_embu/loginpage.dart';
 
 void main()
 {
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const LoginPage(),
+    home
     );
   }
 }
