@@ -6,59 +6,45 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'University of Embu Students Portal',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const LoginPage(),
+      home: const SplashScreen(),
     );
   }
 }
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Colors.green[100],
-        body: Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Column(
-            children: [
-              SizedBox(height: 20),
-              CustomAppBar(),
-              SizedBox(height: 20),
-              SearchArea(),
-
-            ],
-          ),
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Image.asset('assets/images/logo.jpeg'),
+            SizedBox(height: 30),
+            Text(
+              'University of Embu Students Portal', 
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.blue[900],
+              ),
+              ),
+            SizedBox(height: 20),
+            CircularProgressIndicator(),
+          ],
         ),
       ),
     );
-  }
-}
-
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
-
-class SearchArea extends StatelessWidget {
-  const SearchArea({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }
