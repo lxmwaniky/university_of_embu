@@ -35,15 +35,29 @@ class SplashScreen extends StatelessWidget {
             Text(
               'University of Embu Students Portal', 
               style: TextStyle(
-                fontSize: 30,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
-                color: Colors.blue[900],
-              ),
+                color: Colors.blue)
               ),
             SizedBox(height: 20),
             CircularProgressIndicator(),
+            Text('Welcome...')
+            LoginPage(),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('University of Embu'),
       ),
     );
   }
