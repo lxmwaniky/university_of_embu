@@ -33,7 +33,7 @@ class SplashScreen extends StatelessWidget {
               Image.asset('assets/images/logo.jpeg'),
               const SizedBox(height: 30),
               const Text(
-                'University of Embu Students Portal', 
+                'University of Embu \n\t\tStudents Portal', 
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
