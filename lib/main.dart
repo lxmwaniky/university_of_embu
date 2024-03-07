@@ -21,43 +21,43 @@ class MyApp extends StatelessWidget {
 }
 
 class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key});
+    const SplashScreen({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Image.asset('assets/images/logo.jpeg'),
-            SizedBox(height: 30),
-            Text(
-              'University of Embu Students Portal', 
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: Colors.blue)
-              ),
-            SizedBox(height: 20),
-            CircularProgressIndicator(),
-            Text('Welcome...'),
-            LoginPage(),
-          ],
+    @override
+    Widget build(BuildContext context) {
+      return Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Image.asset('assets/images/logo.jpeg'),
+              const SizedBox(height: 30),
+              Text(
+                'University of Embu Students Portal', 
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue)
+                ),
+              const SizedBox(height: 20),
+              const CircularProgressIndicator(),
+              const Text('Welcome...'),
+              const LoginPage(),
+            ],
+          ),
         ),
-      ),
-    );
+      );
+    }
   }
-}
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+  class LoginPage extends StatelessWidget {
+    const LoginPage({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('University of Embu'),
+    @override
+    Widget build(BuildContext context) {
+      return Scaffold(
+        appBar: AppBar(
+          title: const Text('University of Embu'),
       ),
     );
   }
