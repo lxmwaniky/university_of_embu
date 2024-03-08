@@ -74,16 +74,27 @@ class LoginPage extends StatelessWidget {
           children: [
             Image.asset(
               'assets/images/logo.png',
-              width: 100,
+              width: 70,
             ),
-            Text('Welcome',
+            const SizedBox(height: 20),
+            Text('Login to Continue',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
                 color: Colors.grey[700],
               ),
             ),
-            const Text('Enter your RegNo. and Password')
+            const Text(''),
+            const TextField(
+              decoration: InputDecoration(
+                labelText: 'Registration No.'
+              ),
+            ),
+            const TextField(
+              decoration: InputDecoration(
+                labelText: 'Password',
+              ),
+            )
           ],
         ),
       ),
