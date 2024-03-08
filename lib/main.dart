@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'University of Embu Students Portal',
       theme: ThemeData(
+        primarySwatch: Colors.blue,
         useMaterial3: true,
       ),
       home: const SplashScreen(),
@@ -26,11 +27,16 @@ class SplashScreen extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
       return Scaffold(
+        backgroundColor: Colors.green[300],
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Image.asset('assets/images/logo.png'),
+              Image.asset('assets/images/logo.png',
+                width: 200,
+                height: 200,
+                fit: BoxFit.cover,
+              ),
               const SizedBox(height: 30),
               const Text(
                 'University of Embu \n\t\tStudents Portal', 
