@@ -8,7 +8,9 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
-          
+          children: [
+            
+          ],
         ),
       ),
     );
