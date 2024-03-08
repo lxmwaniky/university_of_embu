@@ -30,7 +30,7 @@ class SplashScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Image.asset('assets/images/logo.jpeg'),
+              Image.asset('assets/images/logo.png'),
               const SizedBox(height: 30),
               const Text(
                 'University of Embu \n\t\tStudents Portal', 
