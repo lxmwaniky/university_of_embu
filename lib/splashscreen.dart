@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:university_of_embu/main.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -94,7 +95,8 @@ class LoginPage extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Password',
               ),
-            )
+            ),
+            const TextButton(onPressed: null, child: Scaffold())
           ],
         ),
       ),
