@@ -67,6 +67,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.green[100],
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -74,6 +75,13 @@ class LoginPage extends StatelessWidget {
             Image.asset(
               'assets/images/logo.png',
               width: 100,
+            ),
+            Text('Welcome',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.grey[700],
+              ),
             )
           ],
         ),
