@@ -31,11 +31,10 @@ class SplashScreen extends StatelessWidget {
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
+            children: [
               Image.asset('assets/images/logo.png',
                 width: 200,
                 height: 200,
-                fit: BoxFit.cover,
               ),
               const SizedBox(height: 30),
               const Text(
