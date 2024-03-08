@@ -36,10 +36,24 @@ class SplashScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 20),
-            const CircularProgressIndicator(),
+            LoginPage(),
           ],
         ),
       ),
+    );
+  }
+}
+
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: () {
+       
+      },
+      child: const Text('Login'),
     );
   }
 }
