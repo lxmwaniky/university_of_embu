@@ -95,8 +95,8 @@ class LoginPage extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Password',
               ),
+              obscureText: true,
             ),
-            const TextButton(onPressed: null, child: Scaffold())
           ],
         ),
       ),
