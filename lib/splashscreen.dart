@@ -82,7 +82,8 @@ class LoginPage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 color: Colors.grey[700],
               ),
-            )
+            ),
+            const Text('Enter your RegNo. and Password')
           ],
         ),
       ),
