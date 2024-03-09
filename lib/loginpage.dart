@@ -132,7 +132,9 @@ class SignUp extends StatelessWidget {
               width: 330,
               child: TextField(
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(13),
+                  ),
                   labelText: 'Registration no.',
                 ),
               ),
@@ -143,7 +145,9 @@ class SignUp extends StatelessWidget {
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(13),
+                  ),
                   labelText: 'Password',
                 ),
               ),
