@@ -234,7 +234,8 @@ class ForgotPassword extends StatelessWidget {
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'Registration no.',
+                  labelText: 'Student Email',
+                  hintText: 'Enter your recovery email',
                 ),
               ),
             ),
