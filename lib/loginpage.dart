@@ -139,8 +139,8 @@ class SignUp extends StatelessWidget {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(13),
                   ),
-                  labelText: 'Registration no.',
-                  hintText: 'Enter Student Registration no.',
+                  labelText: 'Student Email',
+                  hintText: 'Enter Student Email',
                 ),
               ),
             ),
@@ -149,6 +149,8 @@ class SignUp extends StatelessWidget {
               width: 330,
               child: TextField(
                 obscureText: true,
+                enableSuggestions: false,
+                autocorrect: false,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(13),
