@@ -60,13 +60,18 @@ class LoginPage extends StatelessWidget {
             const SizedBox(height: 20),
             ElevatedButton(onPressed: ()
             {
-              MaterialPageRoute(builder: (context) => const HomePage(),);
+              Navigator.push(
+                context, MaterialPageRoute(
+                  builder: (context) => const HomePage(),
+                ),
+              );
             }, 
             child: const Text(
               'Login',
               style: TextStyle(
                 fontSize: 20,
                 color: Colors.white,
+                
               ),
             ),
             ),
