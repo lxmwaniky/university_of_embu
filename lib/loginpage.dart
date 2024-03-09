@@ -48,7 +48,8 @@ class LoginPage extends StatelessWidget {
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'Registration no.',
+                  labelText: 'Student Email',
+                  hintText: 'Enter Student Email',
                 ),
               ),
             ),
@@ -62,6 +63,7 @@ class LoginPage extends StatelessWidget {
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Password',
+                  hintText: 'Enter your Password',
                 ),
               ),
             ),
