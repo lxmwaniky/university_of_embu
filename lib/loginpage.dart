@@ -43,7 +43,12 @@ class LoginPage extends StatelessWidget {
               fit: BoxFit.fill,
             ),
             const SizedBox(height: 20),
-            const LoginButton()
+            TextField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Registration no.',
+              ),
+            )
           ],
         ),
       ),
