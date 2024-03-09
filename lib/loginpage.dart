@@ -164,7 +164,7 @@ class SignUp extends StatelessWidget {
             {
               Navigator.push(
                 context, MaterialPageRoute(
-                  builder: (context) => const HomePage(),
+                  builder: (context) => const LoginPage(),
                 ),
               );
             }, 
@@ -257,6 +257,10 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('University of Embu'),
+      ),
+    );
   }
 }
