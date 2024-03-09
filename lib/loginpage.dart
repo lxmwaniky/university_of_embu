@@ -128,7 +128,7 @@ class SignUp extends StatelessWidget {
               fit: BoxFit.fill,
             ),
             const SizedBox(height: 20),
-            const SizedBox(
+            SizedBox(
               width: 330,
               child: TextField(
                 decoration: InputDecoration(
@@ -136,11 +136,12 @@ class SignUp extends StatelessWidget {
                     borderRadius: BorderRadius.circular(13),
                   ),
                   labelText: 'Registration no.',
+                  hintText: 'Enter Student Registration no.',
                 ),
               ),
             ),
             const SizedBox(height: 10),
-            const SizedBox(
+            SizedBox(
               width: 330,
               child: TextField(
                 obscureText: true,
@@ -149,6 +150,7 @@ class SignUp extends StatelessWidget {
                     borderRadius: BorderRadius.circular(13),
                   ),
                   labelText: 'Password',
+                  hintText: 'Enter your Password',
                 ),
               ),
             ),
