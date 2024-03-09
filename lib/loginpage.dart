@@ -28,31 +28,22 @@ class LoginPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text('Login',
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.grey[900],
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 20),
             Image.asset(
               'assets/images/logo.png',
               width: 70,
+              fit: BoxFit.fill,
             ),
             const SizedBox(height: 20),
-            Text('Login to Continue',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: Colors.grey[700],
-              ),
-            ),
-            const Text(''),
-            const TextField(
-              decoration: InputDecoration(
-                labelText: 'Registration No.',
-                
-              ),
-            ),
-            const TextField(
-              decoration: InputDecoration(
-                labelText: 'Password',
-              ),
-              obscureText: true,
-            ),
+            const LoginButton()
           ],
         ),
       ),
