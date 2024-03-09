@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:university_of_embu/loginpage.dart';
 
-class SplashScreen extends StatelessWidget {
-  const SplashScreen({super.key});
+class ViewPage extends StatelessWidget {
+  const ViewPage({super.key});
 
   @override
   Widget build(BuildContext context) {

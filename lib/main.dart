@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:university_of_embu/splashscreen.dart';
+import 'package:university_of_embu/viewpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      home: const ViewPage(),
     );
   }
 }

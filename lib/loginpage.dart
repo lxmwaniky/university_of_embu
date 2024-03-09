@@ -43,18 +43,24 @@ class LoginPage extends StatelessWidget {
               fit: BoxFit.fill,
             ),
             const SizedBox(height: 20),
-            const TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Registration no.',
+            const SizedBox(
+              width: 330,
+              child: TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Registration no.',
+                ),
               ),
             ),
             const SizedBox(height: 10),
-            const TextField(
-              obscureText: true,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Password',
+            const SizedBox(
+              width: 330,
+              child: TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Password',
+                ),
               ),
             ),
             const SizedBox(height: 20),
@@ -74,10 +80,29 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context, MaterialPageRoute(
+                    builder: (context) => const ForgotPassword(),
+                    ),
+                );
+              },
+              child: const Text('Forgot password?'),
+            ),
           ],
         ),
       ),
     );
+  }
+}
+
+class ForgotPassword extends StatelessWidget {
+  const ForgotPassword({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
   }
 }
 
