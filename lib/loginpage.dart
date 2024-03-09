@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 class LoginButton extends StatelessWidget {
@@ -43,10 +45,19 @@ class LoginPage extends StatelessWidget {
               fit: BoxFit.fill,
             ),
             const SizedBox(height: 20),
-            TextField(
+            const TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 labelText: 'Registration no.',
+              ),
+            ),
+            const SizedBox(height: 5),
+            const TextField(
+              obscureText: true,
+              
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Password',
               ),
             )
           ],
