@@ -12,7 +12,7 @@ class LoginButton extends StatelessWidget {
           MaterialPageRoute(builder: (context) => const LoginPage()),
         );
       },
-      child: const Text('Login'),
+      child: const Text('Welcome'),
     );
   }
 }
