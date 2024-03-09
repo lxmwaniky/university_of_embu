@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 
 class LoginButton extends StatelessWidget {
@@ -74,10 +76,6 @@ class LoginPage extends StatelessWidget {
             }, 
             child: const Text(
               'Login',
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.black,
-              ),
             ),
             ),
             TextButton(
@@ -90,10 +88,28 @@ class LoginPage extends StatelessWidget {
               },
               child: const Text('Forgot password?'),
             ),
+            TextButton(onPressed: () {
+              Navigator.push(
+                context, MaterialPageRoute(
+                  builder: (context) => const SignUp(),
+                  ),
+              );
+            }, 
+            child: const Text('Create an Account'),
+            )
           ],
         ),
       ),
     );
+  }
+}
+
+class SignUp extends StatelessWidget {
+  const SignUp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
   }
 }
 
