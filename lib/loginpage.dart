@@ -28,7 +28,7 @@ class LoginPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Login',
+            Text('Login to the Portal',
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
@@ -49,17 +49,39 @@ class LoginPage extends StatelessWidget {
                 labelText: 'Registration no.',
               ),
             ),
-            const SizedBox(height: 5),
+            const SizedBox(height: 10),
             const TextField(
               obscureText: true,
               decoration: InputDecoration(
-                border: UnderlineInputBorder(),
+                border: OutlineInputBorder(),
                 labelText: 'Password',
               ),
-            )
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(onPressed: ()
+            {
+              MaterialPageRoute(builder: (context) => const HomePage(),);
+            }, 
+            child: const Text(
+              'Login',
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+              ),
+            ),
+            ),
           ],
         ),
       ),
     );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
   }
 }
