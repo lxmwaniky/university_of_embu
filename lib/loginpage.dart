@@ -57,6 +57,8 @@ class LoginPage extends StatelessWidget {
               width: 330,
               child: TextField(
                 obscureText: true,
+                autocorrect: false,
+                enableSuggestions: false,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Password',
