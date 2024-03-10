@@ -42,18 +42,18 @@ class ForgotPassword extends StatelessWidget {
             const SizedBox(height: 20),
             ElevatedButton(onPressed: ()
             {
-              Navigator.push(
-                context, MaterialPageRoute(
-                  builder: (context) => const LoginPage(),
-                ),
-              );
+
             }, 
             child: const Text(
               'Reset Password',
             ),
             ),
             TextButton(onPressed: () {
-
+              Navigator.push(
+                context, MaterialPageRoute(
+                  builder: (context) => const LoginPage(),
+                  ),
+              );
             }, 
             child: const Text('Back to Login'),
             )
