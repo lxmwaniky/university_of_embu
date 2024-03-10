@@ -56,14 +56,16 @@ class SignUp extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10),
-            const SizedBox(
+            SizedBox(
               width: 330,
               child: TextField(
                 obscureText: true,
                 autocorrect: false,
                 enableSuggestions: false,
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(13),
+                  ),
                   labelText: 'Confirm Password',
                   hintText: 'Confirm your Password',
                 ),
