@@ -46,25 +46,29 @@ class LoginPage extends StatelessWidget {
               fit: BoxFit.fill,
             ),
             const SizedBox(height: 20),
-            const SizedBox(
+            SizedBox(
               width: 330,
               child: TextField(
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(13),
+                  ),
                   labelText: 'Student Email',
                   hintText: 'Enter Student Email',
                 ),
               ),
             ),
             const SizedBox(height: 10),
-            const SizedBox(
+            SizedBox(
               width: 330,
               child: TextField(
                 obscureText: true,
                 autocorrect: false,
                 enableSuggestions: false,
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(13),
+                  ),
                   labelText: 'Password',
                   hintText: 'Enter your Password',
                 ),
