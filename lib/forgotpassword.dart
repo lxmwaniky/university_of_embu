@@ -27,11 +27,13 @@ class ForgotPassword extends StatelessWidget {
               fit: BoxFit.fill,
             ),
             const SizedBox(height: 20),
-            const SizedBox(
+            SizedBox(
               width: 330,
               child: TextField(
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(13),
+                  ),
                   labelText: 'Student Email',
                   hintText: 'Enter your recovery email',
                 ),
