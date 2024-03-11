@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:university_of_embu/forgotpassword.dart';
+import 'package:university_of_embu/homepage.dart';
 import 'package:university_of_embu/signuppage.dart';
 
 class LoginButton extends StatelessWidget {
@@ -76,6 +77,11 @@ class LoginPage extends StatelessWidget {
             const SizedBox(height: 20),
             ElevatedButton(onPressed: ()
             {
+              Navigator.push(
+                context, MaterialPageRoute(
+                  builder: (context) => const HomePage(),
+                )
+              );
             }, 
             child: const Text(
               'Login',
