@@ -6,9 +6,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.green[100],
       appBar: AppBar(
-        title: const Text('University of Embu'),
+        backgroundColor: Colors.green[200],
+        title: const Text(
+          'University of Embu',
+          style: TextStyle(),
+          ),
       ),
+      body: Container(),
     );
   }
 }
