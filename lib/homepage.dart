@@ -14,7 +14,10 @@ class HomePage extends StatelessWidget {
           style: TextStyle(),
           ),
       ),
-      body: Container(),
+      drawer: Drawer(
+        backgroundColor: Colors.green[200],
+        width: 250,
+      ),
     );
   }
 }
