@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.green[100],
       appBar: AppBar(
-        backgroundColor: Colors.green[300],
+        backgroundColor: Colors.green[200],
         title: const Text(
           'University of Embu',
           style: TextStyle(),
