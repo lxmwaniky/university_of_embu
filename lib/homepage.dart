@@ -20,9 +20,9 @@ class HomePage extends StatelessWidget {
         child: ListView(
           children: [
             UserAccountsDrawerHeader(
-              accountName: Text('Alex Mwaniki Nyambura'),
-              accountEmail: Text('27465@student.embuni.ac.ke'),
-              currentAccountPicture: CircleAvatar(
+              accountName: const Text('Alex Mwaniki Nyambura'),
+              accountEmail: const Text('27465@student.embuni.ac.ke'),
+              currentAccountPicture: const CircleAvatar(
                 backgroundImage: AssetImage(
                   'assets/images/alex.png',
                 ),
@@ -31,6 +31,14 @@ class HomePage extends StatelessWidget {
                 color: Colors.green[300],
               ),
             ),
+            ListTile(
+              leading: const Icon(Icons.home),
+              title: const Text('Home'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            
           ],
         ),
       ),
