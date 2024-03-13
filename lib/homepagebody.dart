@@ -22,7 +22,18 @@ class HomePageBody extends StatelessWidget {
             ],
           ),
           // Assignments
-          Row(),
+          Row(
+            children: [
+              Text('Assignments',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey[900],
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
           // Fee Balance
           Row(),
           // Units Registered
