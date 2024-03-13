@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:university_of_embu/loginpage.dart';
+import 'package:university_of_embu/main.dart';
 
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
@@ -30,6 +31,7 @@ class SignUp extends StatelessWidget {
             SizedBox(
               width: 330,
               child: TextField(
+                controller: _email,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(13),
@@ -43,6 +45,7 @@ class SignUp extends StatelessWidget {
             SizedBox(
               width: 330,
               child: TextField(
+                controller: _password,
                 obscureText: true,
                 enableSuggestions: false,
                 autocorrect: false,
