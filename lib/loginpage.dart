@@ -60,7 +60,7 @@ class LoginPage extends StatelessWidget {
             const SizedBox(height: 20),
             ElevatedButton(onPressed: ()
             {
-              Navigator.push(
+              Navigator.pushReplacement(
                 context, MaterialPageRoute(
                   builder: (context) => const HomePage(),
                 )
@@ -72,7 +72,7 @@ class LoginPage extends StatelessWidget {
             ),
             TextButton(
               onPressed: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                   context, MaterialPageRoute(
                     builder: (context) => const ForgotPassword(),
                     ),
@@ -81,7 +81,7 @@ class LoginPage extends StatelessWidget {
               child: const Text('Forgot password?'),
             ),
             TextButton(onPressed: () {
-              Navigator.push(
+              Navigator.pushReplacement(
                 context, MaterialPageRoute(
                   builder: (context) => const SignUp(),
                   ),
