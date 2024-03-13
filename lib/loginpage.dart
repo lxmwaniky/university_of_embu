@@ -3,23 +3,6 @@ import 'package:university_of_embu/forgotpassword.dart';
 import 'package:university_of_embu/homepage.dart';
 import 'package:university_of_embu/signuppage.dart';
 
-class LoginButton extends StatelessWidget {
-  const LoginButton({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const LoginPage()),
-        );
-      },
-      child: const Text('Welcome'),
-    );
-  }
-}
-
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
