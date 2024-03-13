@@ -8,6 +8,10 @@ class HomePageBody extends StatelessWidget {
     return Center(
       child: Column(
         children: [
+          //Fee Balance
+
+          // Current Registered Units
+
           
         ],
       ),

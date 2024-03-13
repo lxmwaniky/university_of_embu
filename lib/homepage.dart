@@ -9,14 +9,15 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.green[100],
-      appBar: AppBar(
+      appBar: AppBar(        
         backgroundColor: Colors.green[200],
         title: const Text(
           'University of Embu',
           style: TextStyle(),
           ),
+
       ),
-      body: HomePageBody(),
+      body: const HomePageBody(),
       drawer: Drawer(
         backgroundColor: Colors.green[200],
         width: 230,
