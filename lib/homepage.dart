@@ -15,7 +15,15 @@ class HomePage extends StatelessWidget {
           'University of Embu',
           style: TextStyle(),
           ),
-
+        centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: () {}, 
+            icon: const Icon(Icons.notifications,
+            size: 30,
+            ),
+            ),
+        ],
       ),
       body: const HomePageBody(),
       drawer: Drawer(
