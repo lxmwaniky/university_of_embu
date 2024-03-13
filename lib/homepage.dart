@@ -96,10 +96,21 @@ class HomePage extends StatelessWidget {
               },
             ),
             //Evaluation
-
+            ListTile(
+              leading: const Icon(Icons.rate_review),
+              title: const Text('Evaluation'),
+              onTap: () {
+              },
+            ),
             //Reporting
-
+            ListTile(
+              leading: const Icon(Icons.report),
+              title: const Text('Reporting'),
+              onTap: () {
+              },
+            ),
             //Logout
+            
           ],
         ),
       ),
