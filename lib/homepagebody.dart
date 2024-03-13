@@ -35,9 +35,31 @@ class HomePageBody extends StatelessWidget {
             ],
           ),
           // Fee Balance
-          Row(),
+          Row(
+            children: [
+              Text('Fee Balance',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey[900],
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
           // Units Registered
-          Row(),
+          Row(
+            children: [
+              Text('Units Registered',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey[900],
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
           // Class Timetable
           Row(),
           // Exam Timetable
