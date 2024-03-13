@@ -110,7 +110,12 @@ class HomePage extends StatelessWidget {
               },
             ),
             //Logout
-            
+            ListTile(
+              leading: const Icon(Icons.logout),
+              title: const Text('Logout'),
+              onTap: () {
+              },
+            ),
           ],
         ),
       ),
