@@ -18,7 +18,18 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.green[200],
         width: 220,
         child: ListView(
-          
+          children: const [
+            UserAccountsDrawerHeader(
+              accountName: Text('Alex Mwaniki Nyambura'),
+              accountEmail: Text('27465@student.embuni.ac.ke'),
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: AssetImage(
+                  'assets/images/alex.jpg',
+                  
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
