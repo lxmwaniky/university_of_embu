@@ -15,10 +15,10 @@ class HomePage extends StatelessWidget {
           ),
       ),
       drawer: Drawer(
-        backgroundColor: Colors.green[200],
+        backgroundColor: Colors.green[300],
         width: 220,
         child: ListView(
-          children: const [
+          children: [
             UserAccountsDrawerHeader(
               accountName: Text('Alex Mwaniki Nyambura'),
               accountEmail: Text('27465@student.embuni.ac.ke'),
@@ -26,6 +26,9 @@ class HomePage extends StatelessWidget {
                 backgroundImage: AssetImage(
                   'assets/images/alex.png',
                 ),
+              ),
+              decoration: BoxDecoration(
+                color: Colors.green[300],
               ),
             ),
           ],
