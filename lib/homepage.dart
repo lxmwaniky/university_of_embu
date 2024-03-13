@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
       ),
       drawer: Drawer(
         backgroundColor: Colors.green[300],
-        width: 220,
+        width: 230,
         child: ListView(
           children: [
             UserAccountsDrawerHeader(
