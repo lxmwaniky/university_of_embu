@@ -17,8 +17,20 @@ class HomePage extends StatelessWidget {
       drawer: Drawer(
         backgroundColor: Colors.green[200],
         width: 220,
-
-
+        child: ListTile(
+          leading: const Icon(
+            Icons.home,
+            color: Colors.grey,
+            ),
+          title: Text(
+            'Home',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Colors.grey[900],
+              ),
+            ),
+        ),
       ),
     );
   }
