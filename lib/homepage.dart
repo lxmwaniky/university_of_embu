@@ -45,14 +45,61 @@ class HomePage extends StatelessWidget {
                 color: Colors.green[300],
               ),
             ),
+
+            //Home
             ListTile(
               leading: const Icon(Icons.home),
               title: const Text('Home'),
               onTap: () {
-                
               },
             ),
-            
+            //Fees
+            ListTile(
+              leading: const Icon(Icons.money),
+              title: const Text('Fees'),
+              onTap: () {
+              },
+            ),
+            //Units
+            ListTile(
+              leading: const Icon(Icons.book),
+              title: const Text('Units'),
+              onTap: () {
+              },
+            ),
+            //Timetable
+            ListTile(
+              leading: const Icon(Icons.timelapse),
+              title: const Text('Timetable'),
+              onTap: () {
+              },
+            ),
+            //Exam Results
+            ListTile(
+              leading: const Icon(Icons.assignment),
+              title: const Text('Examinations'),
+              onTap: () {
+              },
+            ),
+            //LMS
+            ListTile(
+              leading: const Icon(Icons.computer),
+              title: const Text('LMS'),
+              onTap: () {
+              },
+            ),
+            //Hostel Booking
+            ListTile(
+              leading: const Icon(Icons.hotel),
+              title: const Text('Hostel Booking'),
+              onTap: () {
+              },
+            ),
+            //Evaluation
+
+            //Reporting
+
+            //Logout
           ],
         ),
       ),
