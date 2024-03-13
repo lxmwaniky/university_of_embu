@@ -61,7 +61,18 @@ class HomePageBody extends StatelessWidget {
             ],
           ),
           // Class Timetable
-          Row(),
+          Row(
+            children: [
+              Text('Class Timetable',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey[900],
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
           // Exam Timetable
           Row(),
           // Results
