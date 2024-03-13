@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "452909170188",
+    "project_id": "fir-test-38783",
+    "storage_bucket": "fir-test-38783.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452909170188:android:147293fb0e4a4f3c697829",
+        "android_client_info": {
+          "package_name": "com.lxmwaniky.university_of_embu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGyxTA3NOPTjcmNWmXyOEU7IS4_oAXbKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
