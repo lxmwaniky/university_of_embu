@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
+import 'package:university_of_embu/loginpage.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -51,6 +52,11 @@ class HomePage extends StatelessWidget {
               leading: const Icon(Icons.home),
               title: const Text('Home'),
               onTap: () {
+                Navigator.pop(
+                  context, MaterialPageRoute(
+                    builder: (context) => const HomePage(),
+                    ),
+                  );
               },
             ),
             //Fees
@@ -114,6 +120,11 @@ class HomePage extends StatelessWidget {
               leading: const Icon(Icons.logout),
               title: const Text('Logout'),
               onTap: () {
+                Navigator.push(
+                  context, MaterialPageRoute(
+                    builder: (context) => const LoginPage(),
+                    ),
+                );
               },
             ),
           ],
