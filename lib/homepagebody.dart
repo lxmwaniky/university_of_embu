@@ -9,96 +9,19 @@ class HomePageBody extends StatelessWidget {
       child: Column(
         children: [
           // Today's Lessons
-          Row(
-            children: [
-              Text('Today\'s Lessons',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey[900],
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
+          Row(),
           // Assignments
-          Row(
-            children: [
-              Text('Assignments',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey[900],
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
+          Row(),
           // Fee Balance
-          Row(
-            children: [
-              Text('Fee Balance',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey[900],
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
+          Row(),
           // Units Registered
-          Row(
-            children: [
-              Text('Units Registered',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey[900],
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
+          Row(),
           // Class Timetable
-          Row(
-            children: [
-              Text('Class Timetable',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey[900],
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
+          Row(),
           // Exam Timetable
-          Row(
-            children: [
-              Text('Exam Timetable',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey[900],
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
+          Row(),
           // Results
-          Row(
-            children: [
-              Text('Results',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey[900],
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
+          Row(),
         ],
       ),
     );
