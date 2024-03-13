@@ -24,8 +24,7 @@ class HomePage extends StatelessWidget {
               accountEmail: Text('27465@student.embuni.ac.ke'),
               currentAccountPicture: CircleAvatar(
                 backgroundImage: AssetImage(
-                  'assets/images/alex.jpg',
-                  
+                  'assets/images/alex.png',
                 ),
               ),
             ),
