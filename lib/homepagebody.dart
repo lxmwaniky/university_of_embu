@@ -9,7 +9,14 @@ class HomePageBody extends StatelessWidget {
       child: Column(
         children: [
           // Today's Lessons
-          Row(),
+          Row(
+            children: [
+              Text(
+                'Today\'s Lessons',
+              ),
+              Table()
+            ],
+          ),
           // Assignments
           Row(),
           // Fee Balance
