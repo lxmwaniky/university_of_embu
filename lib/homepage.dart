@@ -69,7 +69,7 @@ class HomePage extends StatelessWidget {
             ),
             //Timetable
             ListTile(
-              leading: const Icon(Icons.timelapse),
+              leading: const Icon(Icons.today),
               title: const Text('Timetable'),
               onTap: () {
               },
