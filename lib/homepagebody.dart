@@ -8,11 +8,31 @@ class HomePageBody extends StatelessWidget {
     return Center(
       child: Column(
         children: [
-          //Fee Balance
-
-          // Current Registered Units
-
-          
+          // Today's Lessons
+          Row(
+            children: [
+              Text('Today\'s Lessons',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey[900],
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+          // Assignments
+          Row(),
+          // Fee Balance
+          Row(),
+          // Units Registered
+          Row(),
+          // Class Timetable
+          Row(),
+          // Exam Timetable
+          Row(),
+          // Results
+          Row(),
         ],
       ),
     );
