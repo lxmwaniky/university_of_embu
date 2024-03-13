@@ -118,6 +118,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_core_channel:
+    dependency: "direct main"
+    description:
+      name: flutter_core_channel
+      sha256: b13180e7aa557969ff8e4c83ddef672cd31f59d5a1997f30fdfcbc6f0a286427
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.8"
   flutter_lints:
     dependency: "direct dev"
     description:
