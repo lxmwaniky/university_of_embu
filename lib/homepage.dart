@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
           ),
       ),
       drawer: Drawer(
-        backgroundColor: Colors.green[300],
+        backgroundColor: Colors.green[200],
         width: 230,
         child: ListView(
           children: [
@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               decoration: BoxDecoration(
-                color: Colors.green[300],
+                color: Colors.green[200],
               ),
             ),
 
