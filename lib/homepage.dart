@@ -55,7 +55,7 @@ class HomePage extends StatelessWidget {
             ),
             //Fees
             ListTile(
-              leading: const Icon(Icons.money),
+              leading: const Icon(Icons.paid),
               title: const Text('Fees'),
               onTap: () {
               },
