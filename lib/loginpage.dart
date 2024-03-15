@@ -14,7 +14,6 @@ class _LoginPageState extends State<LoginPage> {
   late final TextEditingController _email;
   late final TextEditingController _password;
 
-  init,
 
   @override
   Widget build(BuildContext context) {
