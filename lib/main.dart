@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         useMaterial3: true,
       ),
-      home: const ViewPage(),
+      home: const SplashScreen(),
     );
   }
 }
