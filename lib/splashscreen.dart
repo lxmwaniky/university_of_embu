@@ -11,7 +11,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(Duration(seconds: 50), () {
       Navigator.pushAndRemoveUntil(
           context,
           MaterialPageRoute(
@@ -26,18 +26,29 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.green[200],
-      body: Column(
-        children: [
-              Text('University of Embu Students Portal',
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey[900],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+                Text('University of Embu',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.grey[900],
+                  ),
+                  textAlign: TextAlign.center,
+                ),      
+                Image.asset('assets/images/logo.png', width: 200, height: 200),
+                Text('Students Portal',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.grey[900],
+                  ),
+                  textAlign: TextAlign.center,
                 ),
-                textAlign: TextAlign.center,
-              ),      
-              Image.asset('assets/images/logo.png', width: 200, height: 200),
-        ],
+          ],
+        ),
       ),
     );
   }
