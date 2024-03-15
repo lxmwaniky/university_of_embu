@@ -30,29 +30,30 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-                Text('University of Embu',
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.grey[700],
-                  ),
-                  textAlign: TextAlign.center,
-                ),      
-                const SizedBox(height: 20),
-                Image.asset('assets/images/logo.png', width: 200, height: 200),
-                const SizedBox(height: 20),
-                Text('Students Portal',
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.grey[600],
-                  ),
-                  textAlign: TextAlign.center,
-                ),
+            Text(
+              'University of Embu',
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.grey[700],
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 20),
+            Image.asset('assets/images/logo.png', width: 200, height: 200),
+            const SizedBox(height: 20),
+            Text(
+              'Students Portal',
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.grey[600],
+              ),
+              textAlign: TextAlign.center,
+            ),
           ],
         ),
       ),
     );
   }
 }
-
