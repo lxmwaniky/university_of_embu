@@ -28,6 +28,7 @@ class _SignUpState extends State<SignUp> {
     super.dispose();
   }
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
