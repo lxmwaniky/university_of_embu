@@ -38,7 +38,9 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                   textAlign: TextAlign.center,
                 ),      
+                const SizedBox(height: 20),
                 Image.asset('assets/images/logo.png', width: 200, height: 200),
+                const SizedBox(height: 20),
                 Text('Students Portal',
                   style: TextStyle(
                     fontSize: 30,
