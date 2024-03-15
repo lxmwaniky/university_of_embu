@@ -32,18 +32,18 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
                 Text('University of Embu',
                   style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,
-                    color: Colors.grey[900],
+                    color: Colors.grey[700],
                   ),
                   textAlign: TextAlign.center,
                 ),      
                 Image.asset('assets/images/logo.png', width: 200, height: 200),
                 Text('Students Portal',
                   style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,
-                    color: Colors.grey[900],
+                    color: Colors.grey[600],
                   ),
                   textAlign: TextAlign.center,
                 ),
