@@ -26,8 +26,18 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.green[200],
-      body: Center(
-        child: Image.asset('assets/images/logo.png', width: 200, height: 200),
+      body: Column(
+        children: [
+              Text('University of Embu Students Portal',
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey[900],
+                ),
+                textAlign: TextAlign.center,
+              ),      
+              Image.asset('assets/images/logo.png', width: 200, height: 200),
+        ],
       ),
     );
   }
