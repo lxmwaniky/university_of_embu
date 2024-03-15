@@ -9,7 +9,6 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
-
   late final TextEditingController _email;
   late final TextEditingController _password;
 
@@ -35,7 +34,8 @@ class _SignUpState extends State<SignUp> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Account Registration',
+            Text(
+              'Account Registration',
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
@@ -98,22 +98,22 @@ class _SignUpState extends State<SignUp> {
               ),
             ),
             const SizedBox(height: 20),
-            ElevatedButton(onPressed: ()
-            {
-
-            }, 
-            child: const Text(
-              'Sign Up',
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text(
+                'Sign Up',
+              ),
             ),
-            ),
-            TextButton(onPressed: () {
-              Navigator.push(
-                context, MaterialPageRoute(
-                  builder: (context) => const LoginPage(),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const LoginPage(),
                   ),
-              );
-            }, 
-            child: const Text('Back to Login'),
+                );
+              },
+              child: const Text('Back to Login'),
             )
           ],
         ),
