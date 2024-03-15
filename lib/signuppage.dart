@@ -85,6 +85,7 @@ class _SignUpState extends State<SignUp> {
             SizedBox(
               width: 330,
               child: TextField(
+                controller: _password,
                 obscureText: true,
                 autocorrect: false,
                 enableSuggestions: false,

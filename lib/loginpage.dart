@@ -3,8 +3,18 @@ import 'package:university_of_embu/forgotpassword.dart';
 import 'package:university_of_embu/homepage.dart';
 import 'package:university_of_embu/signuppage.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
+
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  late final TextEditingController _email;
+  late final TextEditingController _password;
+
+  init,
 
   @override
   Widget build(BuildContext context) {
@@ -45,6 +55,7 @@ class LoginPage extends StatelessWidget {
             SizedBox(
               width: 330,
               child: TextField(
+                
                 obscureText: true,
                 autocorrect: false,
                 enableSuggestions: false,
