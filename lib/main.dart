@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:university_of_embu/viewpage.dart';
+import 'package:university_of_embu/splashscreen.dart';
 import 'firebase_options.dart';
 
 void main() async {
