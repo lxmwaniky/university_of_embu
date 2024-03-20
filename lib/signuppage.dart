@@ -99,6 +99,14 @@ class _SignUpState extends State<SignUp> {
                     ),
                     labelText: 'Password',
                     hintText: 'Enter your Password',
+                    suffixIcon: IconButton(
+                      icon: Icon(Icons.visibility),
+                      onPressed: () {
+                        setState(() {
+                          _password.obscureText = !_password.obscureText;
+                        });
+                      },
+                    )
                   ),
                 ),
               ),
