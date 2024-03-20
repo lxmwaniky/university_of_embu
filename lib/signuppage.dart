@@ -11,11 +11,13 @@ class SignUp extends StatefulWidget {
 class _SignUpState extends State<SignUp> {
   late final TextEditingController _email;
   late final TextEditingController _password;
+  late final TextEditingController _confirmPassword;
 
   @override
   void initState() {
     _email = TextEditingController();
     _password = TextEditingController();
+    _confirmPassword = TextEditingController();
     super.initState();
   }
 
@@ -23,6 +25,7 @@ class _SignUpState extends State<SignUp> {
   void dispose() {
     _email.dispose();
     _password.dispose();
+    _confirmPassword.dispose();
     super.dispose();
   }
 
