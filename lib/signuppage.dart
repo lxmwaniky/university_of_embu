@@ -82,6 +82,7 @@ class _SignUpState extends State<SignUp> {
                     labelText: 'Student Email',
                     hintText: 'Enter Student Email',
                   ),
+                  keyboardType: TextInputType.emailAddress,
                 ),
               ),
               const SizedBox(height: 10),
