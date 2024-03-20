@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:university_of_embu/loginpage.dart';
 
@@ -27,6 +28,21 @@ class _SignUpState extends State<SignUp> {
     _password.dispose();
     _confirmPassword.dispose();
     super.dispose();
+  }
+
+  Future <void> _signUp() async {
+    try {
+      if (_password.text != _confirmPassword.text) {
+        return;
+      }
+      UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: _email.text,
+        password: _password.text,
+      );
+      print('User signed up: ${userCredential.user!.uid}');
+    } catch(e) {
+      print('Error signing up: $e');
+    }
   }
 
   @override
