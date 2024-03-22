@@ -30,47 +30,48 @@ class _SignUpState extends State<SignUp> {
     super.dispose();
   }
 
-Future<void> _signUp() async {
-  try {
-    if (_password.text != _confirmPassword.text) {
-      // Passwords don't match
-      return;
+  Future<void> _signUp() async {
+    try {
+      if (_password.text != _confirmPassword.text) {
+        // Passwords don't match
+        return;
+      }
+      UserCredential userCredential =
+          await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: _email.text,
+        password: _password.text,
+      );
+
+      // Send verification email
+      await userCredential.user!.sendEmailVerification();
+
+      // Inform the user that a verification email has been sent
+      showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text('Verification Email Sent'),
+            content: Text(
+                'A verification email has been sent to ${_email.text}. Please verify your email address to complete registration.'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                child: Text('OK'),
+              ),
+            ],
+          );
+        },
+      );
+
+      // User signed up successfully
+      print('User signed up: ${userCredential.user!.uid}');
+    } catch (e) {
+      print('Error signing up: $e');
+      // Handle sign up errors
     }
-    UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
-      email: _email.text,
-      password: _password.text,
-    );
-
-    // Send verification email
-    await userCredential.user!.sendEmailVerification();
-
-    // Inform the user that a verification email has been sent
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text('Verification Email Sent'),
-          content: Text('A verification email has been sent to ${_email.text}. Please verify your email address to complete registration.'),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: Text('OK'),
-            ),
-          ],
-        );
-      },
-    );
-
-    // User signed up successfully
-    print('User signed up: ${userCredential.user!.uid}');
-  } catch (e) {
-    print('Error signing up: $e');
-    // Handle sign up errors
   }
-}
-
 
   @override
   Widget build(BuildContext context) {
@@ -120,20 +121,17 @@ Future<void> _signUp() async {
                   enableSuggestions: false,
                   autocorrect: false,
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(13),
-                    ),
-                    labelText: 'Password',
-                    hintText: 'Enter your Password',
-                    suffixIcon: IconButton(
-                      icon: Icon(Icons.visibility),
-                      onPressed: () {
-                        setState(() {
-                          _password.obscureText = !_password.obscureText;
-                        });
-                      },
-                    )
-                  ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(13),
+                      ),
+                      labelText: 'Password',
+                      hintText: 'Enter your Password',
+                      suffixIcon: IconButton(
+                        icon: Icon(Icons.visibility),
+                        onPressed: () {
+                          setState(() {});
+                        },
+                      )),
                 ),
               ),
               const SizedBox(height: 10),
@@ -153,13 +151,13 @@ Future<void> _signUp() async {
                     suffixIcon: IconButton(
                       icon: Icon(Icons.visibility),
                       onPressed: () {
-                        setState(() {
-                          _confirmPassword.obscureText = !_confirmPassword.obscureText;
-                        });
+                        setState(() {});
+                      },
+                    ),
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () {},
                 child: const Text(
