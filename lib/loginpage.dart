@@ -47,7 +47,7 @@ class _LoginPageState extends State<LoginPage> {
                   if (value == null || value.isEmpty) {
                     return 'Please enter your email address';
                   }
-                  return null;
+                  return 'Enter your email address';
                 },
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
@@ -66,7 +66,7 @@ class _LoginPageState extends State<LoginPage> {
                   if (value == null || value.isEmpty) {
                     return 'Please enter your password';
                   }
-                  return null;
+                  return 'Enter your password';
                 },
                 obscureText: true,
                 autocorrect: false,
@@ -84,9 +84,7 @@ class _LoginPageState extends State<LoginPage> {
             ElevatedButton(
               onPressed: () {
                 if (_formKey.currentState!.validate()) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Processing Data')),
-                  );
+                  const HomePage();
                 }
               },
               child: const Text(
