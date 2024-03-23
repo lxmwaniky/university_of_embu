@@ -40,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(height: 20),
             SizedBox(
               width: 330,
-              child: TextField(
+              child: TextFormField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(13),
@@ -53,8 +53,7 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(height: 10),
             SizedBox(
               width: 330,
-              child: TextField(
-                
+              child: TextFormField(
                 obscureText: true,
                 autocorrect: false,
                 enableSuggestions: false,
