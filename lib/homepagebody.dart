@@ -5,25 +5,8 @@ class HomePageBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        children: [
-          // Today's Lessons
-          Row(),
-          // Assignments
-          Row(),
-          // Fee Balance
-          Row(),
-          // Units Registered
-          Row(),
-          // Class Timetable
-          Row(),
-          // Exam Timetable
-          Row(),
-          // Results
-          Row(),
-        ],
-      ),
+    return const Center(
+      child: Text('Welcome to the University of Embu Students Portal'),
     );
   }
 }
