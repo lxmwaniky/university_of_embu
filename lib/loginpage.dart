@@ -14,7 +14,6 @@ class _LoginPageState extends State<LoginPage> {
   late final TextEditingController _email;
   late final TextEditingController _password;
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +22,8 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Login to the Portal',
+            Text(
+              'Login to the Portal',
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
@@ -41,6 +41,12 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(
               width: 330,
               child: TextFormField(
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter your email address';
+                  }
+                  return null;
+                },
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(13),
@@ -54,6 +60,12 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(
               width: 330,
               child: TextFormField(
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter your password';
+                  }
+                  return null;
+                },
                 obscureText: true,
                 autocorrect: false,
                 enableSuggestions: false,
@@ -67,36 +79,39 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             const SizedBox(height: 20),
-            ElevatedButton(onPressed: ()
-            {
-              Navigator.pushReplacement(
-                context, MaterialPageRoute(
-                  builder: (context) => const HomePage(),
-                )
-              );
-            }, 
-            child: const Text(
-              'Login',
-            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const HomePage(),
+                    ));
+              },
+              child: const Text(
+                'Login',
+              ),
             ),
             TextButton(
               onPressed: () {
                 Navigator.push(
-                  context, MaterialPageRoute(
+                  context,
+                  MaterialPageRoute(
                     builder: (context) => const ForgotPassword(),
-                    ),
+                  ),
                 );
               },
               child: const Text('Forgot password?'),
             ),
-            TextButton(onPressed: () {
-              Navigator.push(
-                context, MaterialPageRoute(
-                  builder: (context) => const SignUp(),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const SignUp(),
                   ),
-              );
-            }, 
-            child: const Text('Create an Account'),
+                );
+              },
+              child: const Text('Create an Account'),
             )
           ],
         ),
