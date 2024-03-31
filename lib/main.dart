@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:university_of_embu/pages/intro_page.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
 
