@@ -13,7 +13,7 @@ class _IntroPageState extends State<IntroPage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 2), () {
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginPage(),),);
     });
   }
@@ -26,21 +26,21 @@ class _IntroPageState extends State<IntroPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'University of Embu',
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Image.asset(
               './lib/assets/images/University-of-Embu-logo.png',
               height: 250,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Text(
