@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:university_of_embu/pages/login_page.dart';
 
 class IntroPage extends StatefulWidget {
   const IntroPage({super.key});
