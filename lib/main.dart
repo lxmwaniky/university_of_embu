@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:university_of_embu/screens/splash_screen.dart';
+import 'package:university_of_embu/pages/intro_page.dart';
 
 void main(){
   runApp(MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'University of Embu Students Portal',
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: IntroPage(),
     );
   }
 }
