@@ -33,7 +33,10 @@ class _IntroPageState extends State<IntroPage> {
           children: [
             Text(
               'University of Embu',
-              style: GoogleFonts.monteCarlo(fontSize: 30, fontWeight: FontWeight.bold,),
+              style: GoogleFonts.roboto(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             SizedBox(
               height: 20,
@@ -47,14 +50,18 @@ class _IntroPageState extends State<IntroPage> {
             ),
             Text(
               'Student Portal',
-              style: TextStyle(
+              style: GoogleFonts.roboto(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
                 color: Colors.grey[800],
               ),
             ),
-            SizedBox(height: 20,),
-            LinearProgressIndicator(minHeight: 5, color: Colors.orange,),
+            SizedBox(
+              height: 30,
+            ),
+            CircularProgressIndicator(
+              color: Colors.green[800],
+            ),
           ],
         ),
       ),
