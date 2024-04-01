@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:university_of_embu/pages/login_page.dart';
 
 class IntroPage extends StatefulWidget {
-  const IntroPage({super.key});
+  IntroPage({super.key});
 
   @override
   State<IntroPage> createState() => _IntroPageState();
@@ -12,11 +12,11 @@ class _IntroPageState extends State<IntroPage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(Duration(seconds: 60), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => const LoginPage(),
+          builder: (context) => LoginPage(),
         ),
       );
     });
@@ -25,26 +25,26 @@ class _IntroPageState extends State<IntroPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[300],
+      backgroundColor: Colors.green[300],
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
+            Text(
               'University of Embu',
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(
+            SizedBox(
               height: 20,
             ),
             Image.asset(
               './lib/assets/images/University-of-Embu-logo.png',
               height: 250,
             ),
-            const SizedBox(
+            SizedBox(
               height: 20,
             ),
             Text(
@@ -55,6 +55,8 @@ class _IntroPageState extends State<IntroPage> {
                 color: Colors.grey[800],
               ),
             ),
+            SizedBox(height: 20,),
+            LinearProgressIndicator(minHeight: 5, color: Colors.orange, borderRadius: BorderRadius.circular(20),),
           ],
         ),
       ),
