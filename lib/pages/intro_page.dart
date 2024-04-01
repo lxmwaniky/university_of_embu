@@ -33,7 +33,7 @@ class _IntroPageState extends State<IntroPage> {
           children: [
             Text(
               'University of Embu',
-              style: GoogleFonts.m~(fontSize: 30, fontWeight: FontWeight.bold,),
+              style: GoogleFonts.monteCarlo(fontSize: 30, fontWeight: FontWeight.bold,),
             ),
             SizedBox(
               height: 20,
