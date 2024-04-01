@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:university_of_embu/pages/login_page.dart';
 
 class IntroPage extends StatefulWidget {
-  IntroPage({super.key});
+  const IntroPage({super.key});
 
   @override
   State<IntroPage> createState() => _IntroPageState();
@@ -13,7 +13,7 @@ class _IntroPageState extends State<IntroPage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 900), () {
+    Future.delayed(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
@@ -38,14 +38,14 @@ class _IntroPageState extends State<IntroPage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Image.asset(
               './lib/assets/images/University-of-Embu-logo.png',
               height: 200,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Text(
@@ -56,7 +56,7 @@ class _IntroPageState extends State<IntroPage> {
                 color: Colors.grey[800],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             CircularProgressIndicator(
