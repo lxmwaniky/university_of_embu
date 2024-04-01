@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:university_of_embu/pages/home_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -14,7 +15,7 @@ class LoginPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Login',
+              'Welcome, Student',
               style: GoogleFonts.roboto(
                 fontSize: 27,
                 fontWeight: FontWeight.bold,
@@ -26,7 +27,7 @@ class LoginPage extends StatelessWidget {
             ),
             Image.asset(
               './lib/assets/images/University-of-Embu-logo.png',
-              height: 150,
+              height: 170,
             ),
             const SizedBox(
               height: 20,
@@ -41,11 +42,11 @@ class LoginPage extends StatelessWidget {
                 );
               },
               child: Container(
-                width: 300,
+                width: 240,
                 decoration: BoxDecoration(
-                  color: Colors.green.shade400,
-                  border: Border.all(color: Colors.grey),
-                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.green.shade300,
+                  border: Border.all(color: Colors.red),
+                  borderRadius: BorderRadius.circular(20),
                 ),
                 padding: EdgeInsets.all(5),
                 child: Row(
@@ -53,7 +54,7 @@ class LoginPage extends StatelessWidget {
                   children: [
                     Image.asset(
                       './lib/assets/images/google-logo.png',
-                      height: 25,
+                      height: 35,
                     ),
                     const SizedBox(
                       width: 10,
