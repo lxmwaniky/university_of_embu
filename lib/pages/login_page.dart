@@ -44,7 +44,7 @@ class LoginPage extends StatelessWidget {
                   border: Border.all(color: Colors.red),
                   borderRadius: BorderRadius.circular(20),
                 ),
-                padding: EdgeInsets.all(5),
+                padding: const EdgeInsets.all(5),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -71,47 +71,19 @@ class LoginPage extends StatelessWidget {
   }
 }
 
-Future<void> _signInWithGoogle(BuildContext context) async {
-  try {
-    // Initialize GoogleSignIn
-    final GoogleSignIn googleSignIn = GoogleSignIn();
+Future<UserCredential> signInWithGoogle() async {
+  // Trigger the authentication flow
+  final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
 
-    // Start the Google sign-in process
-    final GoogleSignInAccount? googleSignInAccount =
-        await googleSignIn.signIn();
+  // Obtain the auth details from the request
+  final GoogleSignInAuthentication? googleAuth = await googleUser?.authentication;
 
-    if (googleSignInAccount != null) {
-      // Check if the email has the required domain
-      if (googleSignInAccount.email?.endsWith('@student.embuni.ac.ke') ??
-          false) {
-        // Obtain the authentication credentials for the signed-in user
-        final GoogleSignInAuthentication googleSignInAuthentication =
-            await googleSignInAccount.authentication;
+  // Create a new credential
+  final credential = GoogleAuthProvider.credential(
+    accessToken: googleAuth?.accessToken,
+    idToken: googleAuth?.idToken,
+  );
 
-        // Create a credential from the access token and ID token
-        final AuthCredential credential = GoogleAuthProvider.credential(
-          accessToken: googleSignInAuthentication.accessToken,
-          idToken: googleSignInAuthentication.idToken,
-        );
-
-        // Sign in to Firebase with the Google credentials
-        final UserCredential userCredential =
-            await FirebaseAuth.instance.signInWithCredential(credential);
-
-        // If sign-in is successful, navigate to the HomePage
-        if (userCredential.user != null) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const HomePage()),
-          );
-        }
-      } else {
-        // Throw an error if the email doesn't have the required domain
-        throw Exception('Only @student.embuni.ac.ke accounts are allowed.');
-      }
-    }
-  } catch (e) {
-    print('Error signing in with Google: $e');
-    // Handle sign-in errors
-  }
+  // Once signed in, return the UserCredential
+  return await FirebaseAuth.instance.signInWithCredential(credential);
 }
