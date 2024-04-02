@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:university_of_embu/pages/home_page.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -33,12 +35,7 @@ class LoginPage extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const HomePage(),
-                  ),
-                );
+                _signInWithGoogle(context);
               },
               child: Container(
                 width: 240,
@@ -71,5 +68,23 @@ class LoginPage extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+Future<void> _signInWithGoogle(BuildContext context) async {
+  try {
+    final GoogleSignInAccount? googleSignInAccount = await GoogleSignIn().signIn();
+    if (googleSignInAccount != null) {
+      final GoogleSignInAuthentication googleSignInAuthentication = await googleSignInAccount.authentication;
+      final AuthCredential credential = GoogleAuthProvider.credential(
+        accessToken: googleSignInAuthentication.accessToken,
+        idToken: googleSignInAuthentication.idToken,
+      );
+      await FirebaseAuth.instance.signInWithCredential(credential);
+      Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage(),),);
+    }
+  }
+  catch (e) {
+    print('Error signing in with google: $e');
   }
 }
