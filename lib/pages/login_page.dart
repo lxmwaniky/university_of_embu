@@ -3,8 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:university_of_embu/auth/auth_services.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({super.key, this.onTap});
-  final Function()? onTap;
+  const LoginPage({super.key});
+
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
