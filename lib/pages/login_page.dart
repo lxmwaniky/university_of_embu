@@ -73,18 +73,45 @@ class LoginPage extends StatelessWidget {
 
 Future<void> _signInWithGoogle(BuildContext context) async {
   try {
-    final GoogleSignInAccount? googleSignInAccount = await GoogleSignIn().signIn();
+    // Initialize GoogleSignIn
+    final GoogleSignIn googleSignIn = GoogleSignIn();
+
+    // Start the Google sign-in process
+    final GoogleSignInAccount? googleSignInAccount =
+        await googleSignIn.signIn();
+
     if (googleSignInAccount != null) {
-      final GoogleSignInAuthentication googleSignInAuthentication = await googleSignInAccount.authentication;
-      final AuthCredential credential = GoogleAuthProvider.credential(
-        accessToken: googleSignInAuthentication.accessToken,
-        idToken: googleSignInAuthentication.idToken,
-      );
-      await FirebaseAuth.instance.signInWithCredential(credential);
-      Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage(),),);
+      // Check if the email has the required domain
+      if (googleSignInAccount.email?.endsWith('@student.embuni.ac.ke') ??
+          false) {
+        // Obtain the authentication credentials for the signed-in user
+        final GoogleSignInAuthentication googleSignInAuthentication =
+            await googleSignInAccount.authentication;
+
+        // Create a credential from the access token and ID token
+        final AuthCredential credential = GoogleAuthProvider.credential(
+          accessToken: googleSignInAuthentication.accessToken,
+          idToken: googleSignInAuthentication.idToken,
+        );
+
+        // Sign in to Firebase with the Google credentials
+        final UserCredential userCredential =
+            await FirebaseAuth.instance.signInWithCredential(credential);
+
+        // If sign-in is successful, navigate to the HomePage
+        if (userCredential.user != null) {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const HomePage()),
+          );
+        }
+      } else {
+        // Throw an error if the email doesn't have the required domain
+        throw Exception('Only @student.embuni.ac.ke accounts are allowed.');
+      }
     }
-  }
-  catch (e) {
-    print('Error signing in with google: $e');
+  } catch (e) {
+    print('Error signing in with Google: $e');
+    // Handle sign-in errors
   }
 }
