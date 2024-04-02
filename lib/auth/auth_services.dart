@@ -12,12 +12,12 @@ class AuthService {
       // Obtain Details
       final GoogleSignInAuthentication gAuth = await gUser.authentication;
       // Create new credential
-      final credential = GoogleAuthProvider.credential(
+      final AuthCredential credential = GoogleAuthProvider.credential(
         accessToken: gAuth.accessToken,
         idToken: gAuth.idToken,
       );
       // Use credential to sign in
-      return await FirebaseAuth.instance.signInWithCredential(credential);
+      await FirebaseAuth.instance.signInWithCredential(credential);
     } catch (e) {
       print(e);
       return null;
