@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "452909170188",
-    "project_id": "fir-test-38783",
-    "storage_bucket": "fir-test-38783.appspot.com"
+    "project_number": "145715267443",
+    "project_id": "uoembu",
+    "storage_bucket": "uoembu.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:452909170188:android:147293fb0e4a4f3c697829",
+        "mobilesdk_app_id": "1:145715267443:android:0117f2db329d8e9b9ba706",
         "android_client_info": {
           "package_name": "com.lxmwaniky.university_of_embu"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDGyxTA3NOPTjcmNWmXyOEU7IS4_oAXbKI"
+          "current_key": "AIzaSyD8Zf1MPJPtsnhHPctxbiNCRV53GBrkfks"
         }
       ],
       "services": {
