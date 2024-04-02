@@ -1,39 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:university_of_embu/auth/auth_services.dart';
-import 'package:university_of_embu/pages/home_page.dart';
 
-class LoginPage extends StatefulWidget {
+class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
-
-  @override
-  State<LoginPage> createState() => _LoginPageState();
-}
-
-class _LoginPageState extends State<LoginPage> {
-  Future<void> _signInWithGoogle() async {
-    try {
-      // Sign in with Google
-      await AuthService().signInWithGoogle();
-
-      // If sign-in is successful, navigate to HomePage
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => const HomePage(),
-        ),
-      );
-    } catch (e) {
-      // Handle sign-in error
-      print('Error signing in with Google: $e');
-      // Show error message to the user
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Failed to sign in with Google. Please try again.'),
-        ),
-      );
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +31,7 @@ class _LoginPageState extends State<LoginPage> {
               height: 20,
             ),
             GestureDetector(
-              onTap: _signInWithGoogle,
+              onTap: () {},
               child: Container(
                 width: 240,
                 decoration: BoxDecoration(
