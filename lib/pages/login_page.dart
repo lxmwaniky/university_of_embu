@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:university_of_embu/auth/auth_services.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -31,7 +32,7 @@ class LoginPage extends StatelessWidget {
               height: 20,
             ),
             GestureDetector(
-              onTap: () {},
+              onTap: () {AuthService().signInWithGoogle();},
               child: Container(
                 width: 240,
                 decoration: BoxDecoration(
