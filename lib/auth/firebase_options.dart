@@ -44,38 +44,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAmw6QUafxajnUHJBsF5npRk3CqoSRMEIQ',
-    appId: '1:452909170188:web:a168c30ff1994e98697829',
-    messagingSenderId: '452909170188',
-    projectId: 'fir-test-38783',
-    authDomain: 'fir-test-38783.firebaseapp.com',
-    storageBucket: 'fir-test-38783.appspot.com',
-    measurementId: 'G-5G00M15LQ5',
+    apiKey: 'AIzaSyDzEYyqYwK1UfdscS1apW8jwppbwUaXr1I',
+    appId: '1:745871435681:web:77e75cb5e1b4585773cde0',
+    messagingSenderId: '745871435681',
+    projectId: 'uoembu-f3225',
+    authDomain: 'uoembu-f3225.firebaseapp.com',
+    storageBucket: 'uoembu-f3225.appspot.com',
+    measurementId: 'G-7JLZ8KCGSM',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDGyxTA3NOPTjcmNWmXyOEU7IS4_oAXbKI',
-    appId: '1:452909170188:android:147293fb0e4a4f3c697829',
-    messagingSenderId: '452909170188',
-    projectId: 'fir-test-38783',
-    storageBucket: 'fir-test-38783.appspot.com',
+    apiKey: 'AIzaSyDDnL1b08LX3t5R8VddIw0qkV_AxgMS8QQ',
+    appId: '1:745871435681:android:6df76eb51daed8c373cde0',
+    messagingSenderId: '745871435681',
+    projectId: 'uoembu-f3225',
+    storageBucket: 'uoembu-f3225.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCMcxUamHK3qjcL6eLlT5yvX3HOVsSJww8',
-    appId: '1:452909170188:ios:554f893bc5c73d05697829',
-    messagingSenderId: '452909170188',
-    projectId: 'fir-test-38783',
-    storageBucket: 'fir-test-38783.appspot.com',
+    apiKey: 'AIzaSyAxaYiporZH1fQ2ThJbOpr-jmXepJpxv60',
+    appId: '1:745871435681:ios:f2c0f0c48e1b0e0973cde0',
+    messagingSenderId: '745871435681',
+    projectId: 'uoembu-f3225',
+    storageBucket: 'uoembu-f3225.appspot.com',
     iosBundleId: 'com.lxmwaniky.universityOfEmbu',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCMcxUamHK3qjcL6eLlT5yvX3HOVsSJww8',
-    appId: '1:452909170188:ios:f491902be555637e697829',
-    messagingSenderId: '452909170188',
-    projectId: 'fir-test-38783',
-    storageBucket: 'fir-test-38783.appspot.com',
+    apiKey: 'AIzaSyAxaYiporZH1fQ2ThJbOpr-jmXepJpxv60',
+    appId: '1:745871435681:ios:b93ee1a6fe2caf1c73cde0',
+    messagingSenderId: '745871435681',
+    projectId: 'uoembu-f3225',
+    storageBucket: 'uoembu-f3225.appspot.com',
     iosBundleId: 'com.lxmwaniky.universityOfEmbu.RunnerTests',
   );
 }
