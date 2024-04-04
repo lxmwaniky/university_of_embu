@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Center(
           child: Text(
-        'You are now logged in!',
+        'You are now logged in',
       )),
     );
   }
