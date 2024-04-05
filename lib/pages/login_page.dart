@@ -40,7 +40,7 @@ class LoginPage extends StatelessWidget {
               child: Container(
                 width: 240,
                 decoration: BoxDecoration(
-                  color: Colors.green.shade300,
+                  color: Colors.blueGrey[50],
                   border: Border.all(color: Colors.red),
                   borderRadius: BorderRadius.circular(20),
                 ),
