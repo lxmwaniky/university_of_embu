@@ -1,8 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:university_of_embu/pages/login_page.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,8 +8,6 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;
-    final storage = const FlutterSecureStorage();
-
 
     return Scaffold(
       appBar: AppBar(
@@ -20,7 +16,6 @@ class HomePage extends StatelessWidget {
           IconButton(
             onPressed: () async {
               await FirebaseAuth.instance.signOut();
-              await storage.delete(key: 'your_token_key');
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
