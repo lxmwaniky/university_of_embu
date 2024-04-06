@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:university_of_embu/pages/login_page.dart';
+import 'package:university_of_embu/pages/auth_page.dart';
 
 class IntroPage extends StatefulWidget {
   const IntroPage({super.key});
