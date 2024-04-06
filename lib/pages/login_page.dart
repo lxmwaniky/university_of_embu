@@ -89,7 +89,7 @@ Future<void> _signInWithGoogle(BuildContext context) async {
         );
       }
     } catch (e) {
-      print('Error signing in with Google: $e');
+      // print('Error signing in with Google: $e');
       // Handle sign-in errors
     }
   }

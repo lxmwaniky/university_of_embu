@@ -21,7 +21,7 @@ class AuthService {
       // Use credential to sign in
       return await FirebaseAuth.instance.signInWithCredential(credential);
     } catch (e) {
-      print(e);
+      // print(e);
       return null;
     }
   }
@@ -37,7 +37,7 @@ class AuthService {
         ),
       );
     } catch (e) {
-      print('Error signing out: $e');
+      // print('Error signing out: $e');
     }
   }
 }

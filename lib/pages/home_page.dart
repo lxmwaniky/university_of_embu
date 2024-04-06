@@ -12,14 +12,14 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.lightBlue[400],
-        title: Text('Comrade Portal'),
+        title: const Text('Comrade Portal'),
         actions: [
           IconButton(
             onPressed: () async {
               AuthService authService = AuthService();
               await authService.signOutAndClearCache(context);
             },
-            icon: Icon(Icons.logout),
+            icon: const Icon(Icons.logout),
           ),
         ],
       ),
