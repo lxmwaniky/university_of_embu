@@ -28,7 +28,8 @@ class AuthService {
 
   Future<void> signOutAndClearCache(BuildContext context) async {
     try {
-      await AuthService().signOutAndClearCache(context); // Call the method to sign out and clear cache
+      await AuthService().signOutAndClearCache(
+          context); // Call the method to sign out and clear cache
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
