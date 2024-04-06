@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:university_of_embu/auth/firebase_options.dart';
 import 'package:university_of_embu/pages/intro_page.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,

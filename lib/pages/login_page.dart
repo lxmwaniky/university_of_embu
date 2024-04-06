@@ -72,24 +72,24 @@ class LoginPage extends StatelessWidget {
 }
 
 Future<void> _signInWithGoogle(BuildContext context) async {
-    try {
-      final GoogleSignInAccount? googleSignInAccount =
-          await GoogleSignIn().signIn();
-      if (googleSignInAccount != null) {
-        final GoogleSignInAuthentication googleSignInAuthentication =
-            await googleSignInAccount.authentication;
-        final AuthCredential credential = GoogleAuthProvider.credential(
-          accessToken: googleSignInAuthentication.accessToken,
-          idToken: googleSignInAuthentication.idToken,
-        );
-        await FirebaseAuth.instance.signInWithCredential(credential);
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const HomePage()),
-        );
-      }
-    } catch (e) {
-      // print('Error signing in with Google: $e');
-      // Handle sign-in errors
+  try {
+    final GoogleSignInAccount? googleSignInAccount =
+        await GoogleSignIn().signIn();
+    if (googleSignInAccount != null) {
+      final GoogleSignInAuthentication googleSignInAuthentication =
+          await googleSignInAccount.authentication;
+      final AuthCredential credential = GoogleAuthProvider.credential(
+        accessToken: googleSignInAuthentication.accessToken,
+        idToken: googleSignInAuthentication.idToken,
+      );
+      await FirebaseAuth.instance.signInWithCredential(credential);
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const HomePage()),
+      );
     }
+  } catch (e) {
+    // print('Error signing in with Google: $e');
+    // Handle sign-in errors
   }
+}
