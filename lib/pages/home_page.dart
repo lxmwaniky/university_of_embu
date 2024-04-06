@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.lightBlue[400],
         title: Text('Comrade Portal'),
         actions: [
           IconButton(
@@ -19,7 +20,7 @@ class HomePage extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => LoginPage(),
+                  builder: (context) => new LoginPage(),
                 ),
               );
             },
@@ -27,7 +28,10 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      backgroundColor: Colors.lightBlue,
+      drawer: Drawer(
+        backgroundColor: Colors.lightBlue[200],
+      ),
+      backgroundColor: Colors.lightBlue[300],
       body: Container(
         child: user != null
             ? Text(

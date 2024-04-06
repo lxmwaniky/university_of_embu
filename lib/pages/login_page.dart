@@ -10,7 +10,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlue,
+      backgroundColor: Colors.lightBlue[300],
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -40,7 +40,7 @@ class LoginPage extends StatelessWidget {
               child: Container(
                 width: 240,
                 decoration: BoxDecoration(
-                  color: Colors.blueGrey[50],
+                  color: Colors.lightBlue[400],
                   border: Border.all(color: Colors.red),
                   borderRadius: BorderRadius.circular(20),
                 ),

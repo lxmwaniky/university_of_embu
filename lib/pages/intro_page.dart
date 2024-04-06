@@ -26,7 +26,7 @@ class _IntroPageState extends State<IntroPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlue,
+      backgroundColor: Colors.lightBlue[300],
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
