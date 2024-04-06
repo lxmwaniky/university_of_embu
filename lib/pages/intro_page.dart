@@ -17,7 +17,7 @@ class _IntroPageState extends State<IntroPage> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => LoginPage(),
+          builder: (context) => AuthPage(),
         ),
       );
     });
