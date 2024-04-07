@@ -49,8 +49,24 @@ class HomePage extends StatelessWidget {
                 icon: Icons.person,
                 title: 'Welcome',
                 content: user != null
-                    ? Text('${user.displayName}')
-                    : const Text('Comrade'),
+                    ? Text(
+                        '${user.displayName}',
+                        style: TextStyle(
+                            fontSize: 22, fontWeight: FontWeight.bold),
+                      )
+                    : const Text(
+                        'Comrade',
+                        style: TextStyle(
+                            fontSize: 22, fontWeight: FontWeight.bold),
+                      ),
+              ),
+              buildInfoSection(
+                icon: Icons.money,
+                title: 'Fee Balance',
+                content: const Text(
+                  'Ksh 0.00',
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
             ],
           ),
