@@ -7,8 +7,8 @@ import 'package:google_fonts/google_fonts.dart';
   Widget? content,
 }) {
   return Container(
-    height: 200,
-    width: 350,
+    width: 300,
+    height: 300,
     margin: const EdgeInsets.all(20),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(15),

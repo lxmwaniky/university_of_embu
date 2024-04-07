@@ -38,7 +38,6 @@ class HomePage extends StatelessWidget {
       ),
       backgroundColor: Colors.lightBlue[300],
       body: SizedBox(
-        height: 200,
         width: 370,
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,
