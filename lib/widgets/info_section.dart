@@ -12,7 +12,7 @@ import 'package:google_fonts/google_fonts.dart';
     margin: const EdgeInsets.all(20),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(15),
-      color: Colors.yellowAccent[100],
+      color: Color.fromARGB(255, 141, 232, 255),
     ),
     padding: const EdgeInsets.all(20),
     child: Column(
