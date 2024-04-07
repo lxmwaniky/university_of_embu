@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:university_of_embu/auth/auth_services.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -15,9 +14,7 @@ class HomePage extends StatelessWidget {
         title: const Text('Comrade Portal'),
         actions: [
           IconButton(
-            onPressed: () async {
-              await AuthService().signOut();
-            },
+            onPressed: () {},
             icon: const Icon(Icons.logout),
           ),
         ],
