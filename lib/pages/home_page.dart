@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:university_of_embu/widgets/info_section.dart';
 import 'package:university_of_embu/pages/login_page.dart';
+import 'package:university_of_embu/widgets/navigation_drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -19,23 +20,9 @@ class HomePage extends StatelessWidget {
             onPressed: () {},
             icon: Icon(Icons.notifications),
           ),
-          IconButton(
-            onPressed: () async {
-              await FirebaseAuth.instance.signOut();
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const LoginPage(),
-                ),
-              );
-            },
-            icon: const Icon(Icons.logout),
-          ),
         ],
       ),
-      drawer: Drawer(
-        backgroundColor: Colors.lightBlue[200],
-      ),
+      drawer: buildDrawer(context),
       backgroundColor: Colors.lightBlue[300],
       body: SizedBox(
         width: 370,
