@@ -10,16 +10,23 @@ class IntroPage extends StatefulWidget {
 }
 
 class _IntroPageState extends State<IntroPage> {
+  double _opacity = 0.0;
+
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 7), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
           builder: (context) => const AuthPage(),
         ),
       );
+    });
+    Future.delayed(const Duration(milliseconds: 500), () {
+      setState(() {
+        _opacity = 1.0;
+      });
     });
   }
 
@@ -31,11 +38,16 @@ class _IntroPageState extends State<IntroPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'University of Embu',
-              style: GoogleFonts.roboto(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
+            AnimatedOpacity(
+              opacity: _opacity, // Use the animated opacity value
+              duration: const Duration(seconds: 2), // Adjust animation duration
+              curve: Curves.easeIn, // Customize animation curve (optional)
+              child: Text(
+                'University of Embu',
+                style: GoogleFonts.roboto(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
             const SizedBox(
