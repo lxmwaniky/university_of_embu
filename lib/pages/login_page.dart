@@ -33,35 +33,29 @@ class LoginPage extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            GestureDetector(
-              onTap: () {
-                _signInWithGoogle(context);
-              },
-              child: Container(
-                width: 240,
-                decoration: BoxDecoration(
-                  color: Colors.lightBlue[400],
-                  border: Border.all(color: Colors.red),
-                  borderRadius: BorderRadius.circular(20),
+            ElevatedButton(
+              onPressed: () => _signInWithGoogle(context),
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.white, backgroundColor: Colors.lightBlue[400], // Text color
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0), // Round corners
                 ),
-                padding: const EdgeInsets.all(5),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(
-                      './lib/assets/images/google-logo.png',
-                      height: 35,
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'Sign in with School Email',
-                      style: GoogleFonts.roboto(
-                          fontSize: 15, fontWeight: FontWeight.bold),
-                    ),
-                  ],
-                ),
+                padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    './lib/assets/images/google-logo.png',
+                    height: 35,
+                  ),
+                  const SizedBox(width: 10),
+                  Text(
+                    'Sign in with School Email',
+                    style: GoogleFonts.roboto(
+                        fontSize: 15, fontWeight: FontWeight.bold),
+                  ),
+                ],
               ),
             ),
           ],
