@@ -1,4 +1,3 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:university_of_embu/widgets/info_section.dart';
 import 'package:university_of_embu/widgets/navigation_drawer.dart';
