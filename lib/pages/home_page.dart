@@ -8,8 +8,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final user = FirebaseAuth.instance.currentUser;
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.lightBlue[400],
@@ -30,19 +28,12 @@ class HomePage extends StatelessWidget {
           child: Row(
             children: [
               buildInfoSection(
-                icon: Icons.person,
-                title: 'Welcome',
-                content: user != null
-                    ? Text(
-                        '${user.displayName}',
-                        style: const TextStyle(
-                            fontSize: 22, fontWeight: FontWeight.bold),
-                      )
-                    : const Text(
-                        'Comrade',
-                        style: TextStyle(
-                            fontSize: 22, fontWeight: FontWeight.bold),
-                      ),
+                icon: Icons.book_online,
+                title: 'Course',
+                content: const Text(
+                  'BSc. Information Technology',
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
               buildInfoSection(
                 icon: Icons.money,
