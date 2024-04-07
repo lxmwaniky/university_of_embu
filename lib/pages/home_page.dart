@@ -16,8 +16,7 @@ class HomePage extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () async {
-              AuthService authService = AuthService();
-              await authService.signOutAndClearCache(context);
+              await AuthService().signOut();
             },
             icon: const Icon(Icons.logout),
           ),
