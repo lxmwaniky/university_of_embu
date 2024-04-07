@@ -40,7 +40,8 @@ class LoginPage extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0), // Round corners
                 ),
-                padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                maximumSize: const Size(280, 200),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
