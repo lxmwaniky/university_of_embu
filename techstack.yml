@@ -1,0 +1,248 @@
+repo_name: lxmwaniky/university_of_embu
+report_id: 170803a7dd3d091680b0baedcd0a838c
+version: 0.1
+repo_type: Public
+timestamp: '2024-04-17T21:44:47+00:00'
+requested_by: lxmwaniky
+provider: github
+branch: master
+detected_tools_count: 20
+tools:
+- name: C lang
+  description: One of the most widely used programming languages of all time
+  website_url: http://en.wikipedia.org/wiki/C_(programming_language)
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu
+  detection_source: Repo Metadata
+- name: C++
+  description: Has imperative, object-oriented and generic programming features, while
+    also providing the facilities for low level memory manipulation
+  website_url: http://www.cplusplus.com/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1049/cplusplus.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu
+  detection_source: Repo Metadata
+- name: Dart
+  description: A new web programming language with libraries, a virtual machine, and
+    tools
+  website_url: https://www.dartlang.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1646/Twitter-02.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu
+  detection_source: Repo Metadata
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu
+  detection_source: Repo Metadata
+- name: Kotlin
+  description: Statically typed Programming Language targeting JVM and JavaScript
+  website_url: https://kotlinlang.org/
+  open_source: true
+  hosted_saas: true
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/3750/pCfEzr6L.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu
+  detection_source: Repo Metadata
+- name: Objective-C
+  description: The primary programming language you use when writing software for
+    OS X and iOS
+  website_url: https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1008/xcode.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu
+  detection_source: Repo Metadata
+- name: Swift
+  description: An innovative new programming language for Cocoa and Cocoa Touch.
+  website_url: https://developer.apple.com/swift/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1009/tuHsaI2U.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu
+  detection_source: Repo Metadata
+- name: Android SDK
+  description: An SDK that provides you the API libraries and developer tools necessary
+    to build, test, and debug apps for Android.
+  website_url: http://developer.android.com
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1010/m8jf0po4imu8t5eemjdd.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu/blob/master/android/app/build.gradle
+  detection_source: android/app/build.gradle
+  last_updated_by: Alex Mwaniki Nyambura
+  last_updated_on: 2024-03-31 17:13:19.000000000 Z
+- name: Flutter
+  description: Cross-platform mobile framework from Google
+  website_url: https://flutter.io/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Cross-Platform Mobile Development
+  image_url: https://img.stackshare.io/service/7180/flutter-mark-square-100.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu/blob/master/pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: Alex Mwaniki Nyambura
+  last_updated_on: 2024-04-05 18:37:54.000000000 Z
+- name: CMake
+  description: An open-source system that manages the build process
+  website_url: http://www.cmake.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Java Build Tools
+  image_url: https://img.stackshare.io/service/2424/0UlUI_y1_400x400.jpg
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu
+  detection_source: Repo Metadata
+- name: Gradle
+  description: A powerful build system for the JVM
+  website_url: https://www.gradle.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Java Build Tools
+  image_url: https://img.stackshare.io/service/975/gradlephant-social-black-bg.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu/blob/master/android/app/build.gradle
+  detection_source: android/app/build.gradle
+  last_updated_by: Alex Mwaniki Nyambura
+  last_updated_on: 2024-03-31 17:13:19.000000000 Z
+- name: Android OS
+  description: An open source mobile operating system by Google
+  website_url: https://www.android.com
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Operating Systems
+  image_url: https://img.stackshare.io/service/9586/ZvmtaSXW_400x400.jpg
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu/blob/master/android/app/build.gradle
+  detection_source: android/app/build.gradle
+  last_updated_by: Alex Mwaniki Nyambura
+  last_updated_on: 2024-03-31 17:13:19.000000000 Z
+- name: cupertino_icons
+  description: Default icons asset for Cupertino widgets based on Apple styled icons
+  package_url: https://pub.dartlang.org/cupertino_icons
+  version: 1.0.6
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu/blob/master/pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Alex Mwaniki Nyambura
+  last_updated_on: 2024-03-31 17:13:19.000000000 Z
+- name: firebase_auth
+  description: Flutter plugin for Firebase Auth
+  package_url: https://pub.dartlang.org/firebase_auth
+  version: 4.19.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu/blob/master/pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Alex Mwaniki Nyambura
+  last_updated_on: 2024-04-02 20:43:56.000000000 Z
+- name: firebase_core
+  description: Flutter plugin for Firebase Core
+  package_url: https://pub.dartlang.org/firebase_core
+  version: 2.28.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu/blob/master/pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Alex Mwaniki Nyambura
+  last_updated_on: 2024-04-02 20:43:56.000000000 Z
+- name: flutter
+  description: Visit flutter.io to get started
+  package_url: https://pub.dartlang.org/flutter
+  version: 0.0.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu/blob/master/pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Alex Mwaniki Nyambura
+  last_updated_on: 2024-04-05 18:37:54.000000000 Z
+- name: flutter_secure_storage
+  description: Flutter Secure Storage provides API to store data in secure storage
+  package_url: https://pub.dartlang.org/flutter_secure_storage
+  version: 9.0.0
+  license: BSD-3-Clause
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu/blob/master/pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Alex Mwaniki Nyambura
+  last_updated_on: 2024-04-05 18:37:54.000000000 Z
+- name: google_fonts
+  description: A Flutter package to use fonts from fonts.google.com
+  package_url: https://pub.dartlang.org/google_fonts
+  version: 6.2.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu/blob/master/pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Alex Mwaniki Nyambura
+  last_updated_on: 2024-04-01 17:40:10.000000000 Z
+- name: google_sign_in
+  description: Flutter plugin for Google Sign-In
+  package_url: https://pub.dartlang.org/google_sign_in
+  version: 6.2.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: https://github.com/lxmwaniky/university_of_embu/blob/master/pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Alex Mwaniki Nyambura
+  last_updated_on: 2024-04-01 17:40:10.000000000 Z
